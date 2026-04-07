@@ -1,13 +1,13 @@
-## Kysely
-
-The database client is a `Kysely<Database>` instance.
-
 ### Migrations and Kysely-CTL
 
 [kysely-ctl](https://github.com/kysely-org/kysely-ctl) should be used to make and run migrations.
 No code should be written that runs migrations in nodejs.
 
-### CamelCasePlugin
+### Plugins
+
+The Kysely client should use (at least) the following plugins: `CamelCasePlugin` and `JSONARrayPlugin`.
+
+#### CamelCasePlugin
 
 Columns in the database use `snake_case`. The `CamelCasePlugin` automatically converts
 column names to `camelCase` in query results and back to `snake_case` when writing.
@@ -15,7 +15,7 @@ column names to `camelCase` in query results and back to `snake_case` when writi
 Write all TypeScript types and Kysely queries using `camelCase` — never reference
 `snake_case` column names directly.
 
-### JSONArrayPlugin (custom)
+#### JSONArrayPlugin (custom)
 
 The `pg` driver serialises plain objects to JSON strings natively (via `prepareObject`) and
 deserialises `jsonb` query results automatically (via its OID 3802 type parser). The one gap

@@ -10,6 +10,7 @@
 - **Database**: Kysely + PostgreSQL, unless otherwise specified
 - **Schemas/Validation**: Zod
 - **Environment variables**: dotenv, t3-env
+- **Component library**: Shadcn
 - **Testing**: Vitest
 
 ### Project bootstrap

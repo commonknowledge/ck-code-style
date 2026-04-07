@@ -318,7 +318,7 @@ Create tests for all new features unless explicitly told not to.
 - Call procedures via a test caller created with `appRouter.createCaller(ctx)`.
 - Assert that `TRPCError` is thrown with the correct code for all known failure cases.
 
-Integration tests:
+**Integration tests:**
 
 - Must not use mocks — use `.env.test` environment variables instead.
 - Should provision and destroy external dependencies around the test suite (e.g. run

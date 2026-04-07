@@ -197,6 +197,10 @@ route file.
 
 ---
 
+## Database
+
+The database client should be a `Kysely<Database>` instance, unless otherwise specified.
+
 @KYSELY.md
 
 ---

@@ -1,7 +1,6 @@
 ## Kysely
 
-The database client is a `Kysely<Database>` instance exported from `src/server/db/index.ts`.
-It uses two plugins:
+The database client is a `Kysely<Database>` instance.
 
 ### Migrations and Kysely-CTL
 

@@ -28,5 +28,5 @@ For tools that don't support `@file` imports (e.g. Cursor, Copilot, ChatGPT), pa
 
 | File | Language |
 |------|----------|
-| `NEXTJS.md` | NextJs |
+| `NEXTJS.md` | NextJS |
 | `PYTHON.md` | Python |
